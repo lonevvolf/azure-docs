@@ -86,14 +86,14 @@ Set-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $appgw -Name rule
 Set-AzApplicationGateway -ApplicationGateway $appgw
 ```
 
-## Delete a rewrite rule
+## Delete a rewrite rule set
 
 ```azurepowershell
 $appgw = Get-AzApplicationGateway -Name "AutoscalingAppGw" -ResourceGroupName "<rg name>"
 Remove-AzApplicationGatewayRewriteRuleSet -Name "LocationHeaderRewrite" -ApplicationGateway $appgw
 $requestroutingrule= Get-AzApplicationGatewayRequestRoutingRule -Name "rule1" -ApplicationGateway $appgw
 $requestroutingrule.RewriteRuleSet= $null
-set-AzApplicationGateway -ApplicationGateway $appgw
+Set-AzApplicationGateway -ApplicationGateway $appgw
 ```
 
 ## Next steps
