@@ -383,7 +383,7 @@ To create the load balancer:
    - **Resource group**: The resource group that contains your virtual machines.
    - **Name**: A name that identifies the load balancer.
    - **Region**: The Azure location that contains your virtual machines.
-   - **Type**: Either public or private. A private load balancer can be accessed from within the virtual network. Most Azure applications can use a private load balancer. If your application needs access to SQL Server directly over the internet, use a public load balancer.
+   - **Type**: Either public or private. A private load balancer can be accessed from within the virtual network. Most Azure applications can use a private load balancer. If your application needs access to SQL Server directly over the internet, or the nodes will require outbound internet access, use a public load balancer.
    - **SKU**: Standard.
    - **Virtual network**: The same network as the virtual machines.
    - **IP address assignment**: Static. 
